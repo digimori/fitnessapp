@@ -21,7 +21,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         sx={{ gap: { lg: '110px', xs: '50px'}}}
         flexWrap="wrap" justifyContent="center">
           {exercises.map((exercise, index) => (
-            <ExerciseCard />
+            <ExerciseCard key={index} exercise={exercise} />
           ))}
         </Stack>
     </Box>
